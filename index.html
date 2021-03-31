@@ -8,11 +8,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
 </head>
 <body>
-  <video id="videobg" src="videos/videobg.mp4" autoplay muted loop poster="img/poster.jpg"></video>
+  <!-- <video id="videobg" src="videos/videobg.mp4" autoplay muted loop poster="img/poster.jpg"></video> -->
   <nav class="navbar">
-        <ul class="main-nav">
-          <li><a href="#" id="contactme">Contact</a></li>
-        </ul>
+        <h1 id="logoh1"><a href="#" id="logo">AKrowg</a></h1>
+        <div class="navright">
+          <ul class="main-nav">
+            <li><a href="#" id="contactme">Contact</a></li>
+          </ul>
+          <div class="bmcontainer" onclick="myFunction(this)">
+            <div class="bmbar1"></div>
+            <div class="bmbar2"></div>
+            <div class="bmbar3"></div>
+          </div>
+        </div>
 
         <img id="myImg" src="img/sike.jpg" alt="">
 
@@ -22,16 +30,22 @@
         </div>
         <script type="text/javascript" src="script.js"></script>
   </nav>
-  <div class="cover">
-    <div class="greeting">Hi!</div>
-    <div class="introduction">
-      <section class="introtxt">My name is Alex</section>
-      <section class="introtxt">I'm learning Web Development.</section>
+  <div class="cover" id="section1">
+    <div class="intromain">
+      <div class="greeting">Hi!</div>
+      <div class="introduction">
+        <section class="introtxt">My name is Alex,</section>
+        <section class="introtxt">I create<h1 id="wdtext"></h1></section>
+      </div>
     </div>
+    <div class="introarrow">
+      <a href="#section2" id="darrowa"><img src="img/down-arrow.png" alt="" id="darrow"></a>
+    </div>
+
   </div>
 
-  <div class="randomimg">
-    <h2 id="randomimgtxt">Here's a random image:</h2>
+  <div class="randomimg" id="section2">
+    <h2 id="randomimgtxt">PROJECTS</h2>
     <img id="rimg" src="https://picsum.photos/200/300" alt="">
     <button id="rimgchanger" type="button" name="button">Change it</button>
     <script type="text/javascript" src="script.js"></script>
@@ -55,5 +69,9 @@
       <a class="smlink" href="https://twitter.com/AlexKrowg"><img class="smimg" src="img/twitter.png" alt=""></a>
       <a class="smlink" href="https://github.com/Krowg"><img class="smimg" src="img/github.png" alt=""></a>
   </footer>
+
+  <!-- <script src="/path/to/lib/jquery.waypoints.min.js"></script>
+  <script src="/path/to/shortcuts/inview.min.js"></script> -->
+
 </body>
 </html>

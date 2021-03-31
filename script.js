@@ -25,3 +25,18 @@ changeimgbtn.onclick = function(){
   location.reload();
 }
 
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+// $(window).load(function () {
+//     var in_view = new Waypoint.Inview({
+//         element: $('#myelement')[0],
+//         enter: function() {
+//             $('#myelement').addClass('start');
+//         },
+//         exit: function() {  // optionally
+//             $('#myelement').removeClass('start');
+//         }
+//     });
+// });
